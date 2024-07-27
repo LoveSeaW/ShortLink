@@ -1,6 +1,7 @@
 package main
 
 import (
+	"ShortLink/pkg/base62"
 	"flag"
 	"fmt"
 
@@ -19,6 +20,9 @@ func main() {
 
 	var c config.Config
 	conf.MustLoad(*configFile, &c)
+
+	// bsae62初始化
+	base62.MustInit(c.BaseString)
 
 	server := rest.MustNewServer(c.RestConf)
 	defer server.Stop()

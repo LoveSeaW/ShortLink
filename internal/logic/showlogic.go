@@ -9,22 +9,22 @@ import (
 	"github.com/zeromicro/go-zero/core/logx"
 )
 
-type ConverLogic struct {
+type ShowLogic struct {
 	logx.Logger
 	ctx    context.Context
 	svcCtx *svc.ServiceContext
 }
 
-func NewConverLogic(ctx context.Context, svcCtx *svc.ServiceContext) *ConverLogic {
-	return &ConverLogic{
+func NewShowLogic(ctx context.Context, svcCtx *svc.ServiceContext) *ShowLogic {
+	return &ShowLogic{
 		Logger: logx.WithContext(ctx),
 		ctx:    ctx,
 		svcCtx: svcCtx,
 	}
 }
 
-func (l *ConverLogic) Conver(req *types.ConvertRequest) (resp *types.ConvertResponse, err error) {
-	// todo: add your logic here and delete this line
+func (l *ShowLogic) Show(req *types.ShowRequest) (resp *types.ShowResponse, err error) {
+	// 查看短链接： 输入短链接然后重定向到真实的链接
 
 	return
 }

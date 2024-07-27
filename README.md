@@ -10,9 +10,15 @@ Short link project based on golang
 ```bash
 goctl api go -api shortener.api -dir .
 
-goctl model mysql datasource -url="root:20212021Ynn.@tcp(82.156.206.148:3306)/shortLink" -table="short_url_map" -dir="./model"
+goctl model mysql datasource -urltool="root:20212021Ynn.@tcp(82.156.206.148:3306)/shortLink" -table="short_url_map" -dir="./model"
 
-goctl model mysql datasource -url="root:20212021Ynn.@tcp(82.156.206.148:3306)/shortLink" -table="sequence" -dir="./model"
+goctl model mysql datasource -urltool="root:20212021Ynn.@tcp(82.156.206.148:3306)/shortLink" -table="sequence" -dir="./model"
 
 go mod tidy
 ```
+
+## 参数校验
+https://pkg.go.dev/github.com/go-playground/validator/v10
+
+下载依赖
+go get github.com/go-playground/validator/v10

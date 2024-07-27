@@ -15,12 +15,12 @@ func RegisterHandlers(server *rest.Server, serverCtx *svc.ServiceContext) {
 			{
 				Method:  http.MethodPost,
 				Path:    "/:shortUrl",
-				Handler: ShowHanlerHandler(serverCtx),
+				Handler: ShowHandler(serverCtx),
 			},
 			{
 				Method:  http.MethodPost,
 				Path:    "/convert",
-				Handler: ConverHandler(serverCtx),
+				Handler: ConvertHandler(serverCtx),
 			},
 		},
 	)
