@@ -1,0 +1,8 @@
+Name: shortener-api
+Host: 0.0.0.0
+Port: 8888
+
+ShorUrlDB:
+  DSN: root:20212021Ynn.@(82.156.206.148:3306)/shortLink?charset=utf8mb4&parseTime=True&loc=Local
+Sequence:
+  DSN: root:20212021Ynn.@(82.156.206.148:3306)/shortLink?charset=utf8mb4&parseTime=True&loc=Local
